@@ -1,6 +1,27 @@
+:root {
+  --header-height: 100px;
+  --body-font-size: 16px;
+
+  --font-size-xs: calc(var(--body-font-size) * 0.75);
+  --font-size-sm: calc(var(--body-font-size) * 0.95);
+  --font-size-md: --body-font-size;
+  --font-size-lg: calc(var(--body-font-size) * 1.1);
+  --font-size-xl: calc(var(--body-font-size) * 1.375);
+  --font-size-xxl: calc(var(--body-font-size) * 1.75);
+}
+
+html, body {
+  min-height: 100vh;
+  font-size: var(--body-font-size);
+}
+
 * {
   margin: 0;
 }
+
+/*
+  ********* HEADER STYLES *********
+*/
 
 .header-bar {
   background-color: #b8c0ff;
@@ -10,7 +31,7 @@
   z-index: 999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   align-items: center;
-  height: 6vw;
+  height: var(--header-height);
   position: fixed;
   top: 0;
 }
@@ -32,10 +53,15 @@
 
 .header-name {
   margin-left: 2rem;
-  font-size: 20px;
   color: white;
   font-family: monospace;
   padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header-name {
+    font-size: var(--font-size-xxl);
+  }
 }
 
 .header-link {
@@ -50,19 +76,19 @@
   cursor: pointer;
 }
 
-.container {
-  display: flex;
-  width: 100vw;
-  height: 540px;
-  margin-top: 8%;
+.main-content {
+  height: 100vh;
+  /* padding-top: 10vh;
+  padding-bottom: 10vh; */
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 .container-box {
   display: flex;
   width: 80%;
-  height: 90%;
+  height: 60vh;
   background-color: #bce3fb;
   border-radius: 40px;
   align-items: center;
@@ -82,7 +108,7 @@
 .content-box {
   display: flex;
   width: 68%;
-  height: 85%;
+  height: 80%;
   background-color: #fbb4cc;
   border-radius: 5px;
   flex-direction: column;
@@ -116,7 +142,7 @@
   background: #ffffff;
   color: black;
   font-family: Arial;
-  font-size: 15px;
+  /* font-size: var(--font-size-md); */
   text-align: center;
   width: 50%;
   height: 15%;
@@ -155,16 +181,12 @@
   border-style: solid;
   border-color: grey;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   border-width: 8px;
 }
 
 .content-table-pokeball {
-  display: flex;
-  width: 20%;
   height: 75%;
-  border-radius: 100px;
-  margin: 20px;
 }
 
 .content-table-pokeball-image {
@@ -239,7 +261,7 @@
 }
 
 .footer-text {
-  font-size: 20px;
+  /* font-size: 20px; */
   color: white;
   font-family: monospace;
 }
@@ -262,7 +284,7 @@
   }
 
   .header-logo {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .header-logo-img {
@@ -272,7 +294,7 @@
   }
 
   .header-name {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 
   .header-link-logo {
@@ -300,7 +322,7 @@
   }
 
   .content-bubble {
-    font-size: 8px;
+    /* font-size: 8px; */
     width: 50%;
     height: 5%;
     left: 17%;
@@ -313,7 +335,7 @@
   }
 
   .content-screen {
-    font-size: 10px;
+    /* font-size: 10px; */
     margin-bottom: 0;
   }
 
@@ -328,7 +350,7 @@
   }
 
   .footer-text {
-    font-size: 10px;
+    /* font-size: 10px; */
   }
 
   .footer-icon {
