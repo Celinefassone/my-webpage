@@ -1,8 +1,9 @@
 :root {
-  --header-height: 100px;
+  --header-height: 80px;
   --body-font-size: 16px;
 
-  --font-size-xs: calc(var(--body-font-size) * 0.75);
+  --font-size-xxs: calc(var(--body-font-size) * 0.4);
+  --font-size-xs: calc(var(--body-font-size) * 0.55);
   --font-size-sm: calc(var(--body-font-size) * 0.95);
   --font-size-md: --body-font-size;
   --font-size-lg: calc(var(--body-font-size) * 1.1);
@@ -10,7 +11,8 @@
   --font-size-xxl: calc(var(--body-font-size) * 1.75);
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   font-size: var(--body-font-size);
 }
@@ -60,7 +62,7 @@ html, body {
 
 @media (min-width: 768px) {
   .header-name {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
   }
 }
 
@@ -76,6 +78,10 @@ html, body {
   cursor: pointer;
 }
 
+/*
+  ********* CONTENT STYLES *********
+*/
+
 .main-content {
   height: 100vh;
   /* padding-top: 10vh;
@@ -87,8 +93,8 @@ html, body {
 
 .container-box {
   display: flex;
-  width: 80%;
-  height: 60vh;
+  width: 75%;
+  height: 65vh;
   background-color: #bce3fb;
   border-radius: 40px;
   align-items: center;
@@ -142,7 +148,7 @@ html, body {
   background: #ffffff;
   color: black;
   font-family: Arial;
-  /* font-size: var(--font-size-md); */
+  font-size: var(--font-size-sm);
   text-align: center;
   width: 50%;
   height: 15%;
@@ -205,8 +211,8 @@ html, body {
   border-radius: 1px;
   border-style: solid;
   border-color: grey;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   overflow-y: scroll;
 }
 
@@ -240,6 +246,10 @@ html, body {
   font-weight: 900;
 }
 
+/*
+  ********* FOOTER STYLES *********
+*/
+
 .footer-bar {
   background-color: #b8c0ff;
   display: flex;
@@ -248,7 +258,7 @@ html, body {
   bottom: 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   align-items: center;
-  height: 6vw;
+  height: 80px;
   position: fixed;
   bottom: 0;
 }
@@ -273,28 +283,15 @@ html, body {
   padding-top: 5px;
 }
 
+/*
+  ********* MEDIA STYLES *********
+*/
+
 @media (max-width: 768px) {
-  .container {
-    margin-top: 18%;
-  }
-
-  .header-bar {
-    height: 6vh;
-    padding: 0.5rem;
-  }
-
-  .header-logo {
-    /* font-size: 16px; */
-  }
-
   .header-logo-img {
     width: 40px;
     height: 40px;
     margin-right: 0.5rem;
-  }
-
-  .header-name {
-    /* font-size: 20px; */
   }
 
   .header-link-logo {
@@ -310,19 +307,13 @@ html, body {
     top: 10%;
   }
 
-  .content-table {
-    width: 60%;
-    height: 10%;
-  }
-
   .content-table-pokeball {
-    margin: 1vh;
-    width: 50%;
-    height: 70%;
+    width: 30%;
+    height: 30%;
   }
 
   .content-bubble {
-    /* font-size: 8px; */
+    font-size: var(--font-size-xxs);
     width: 50%;
     height: 5%;
     left: 17%;
@@ -335,13 +326,8 @@ html, body {
   }
 
   .content-screen {
-    /* font-size: 10px; */
+    font-size: var(--font-size-xs);
     margin-bottom: 0;
-  }
-
-  .footer-bar {
-    height: 6vh;
-    padding: 0.5rem;
   }
 
   .footer-box {
@@ -350,7 +336,7 @@ html, body {
   }
 
   .footer-text {
-    /* font-size: 10px; */
+    font-size: var(--font-size-xs);
   }
 
   .footer-icon {
