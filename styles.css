@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+}
+
+.header-bar {
+  background-color: #b8c0ff;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  height: 6vw;
+  position: fixed;
+  top: 0;
+}
+
+.header-logo {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.header-logo-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.header-name {
+  margin-left: 2rem;
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+  padding: 2rem;
+}
+
+.header-link {
+  height: 60px;
+  padding: 2rem;
+}
+
+.header-link-logo {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 540px;
+  margin-top: 8%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  display: flex;
+  width: 80%;
+  height: 90%;
+  background-color: #bce3fb;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 10px;
+}
+
+.nintendo {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: flex;
+}
+
+.content-box {
+  display: flex;
+  width: 68%;
+  height: 85%;
+  background-color: #fbb4cc;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(0, 0, 0);
+  border-width: 5px;
+  border-style: solid;
+}
+
+.content-character {
+  display: flex;
+  width: 10%;
+  height: 30%;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: relative;
+  top: 38%;
+  left: 15%;
+}
+
+.content-character-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.content-bubble {
+  align-self: flex-start;
+  position: relative;
+  background: #ffffff;
+  color: black;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  width: 50%;
+  height: 15%;
+  border-radius: 10px;
+  left: 10%;
+  bottom: 8%;
+  display: flex;
+  justify-content: center;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  font-family: monospace;
+  align-items: center;
+  padding: 10px;
+}
+.content-bubble:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  border-width: 22px 16px 0;
+  bottom: -22px;
+  left: 24%;
+  margin-left: -16px;
+}
+
+.content-table {
+  display: flex;
+  width: 40%;
+  height: 20%;
+  background-color: lightgreen;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: grey;
+  align-items: center;
+  justify-content: center;
+  border-width: 8px;
+}
+
+.content-table-pokeball {
+  display: flex;
+  width: 20%;
+  height: 75%;
+  border-radius: 100px;
+  margin: 20px;
+}
+
+.content-table-pokeball-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+}
+
+.content-screen {
+  display: flex;
+  width: 70%;
+  height: 35%;
+  background-color: white;
+  border-radius: 1px;
+  border-style: solid;
+  border-color: grey;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+}
+
+.tab-content.active {
+  display: block;
+}
+.tabs {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.tab-name {
+  display: flex;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+  font-family: monospace;
+  overflow: auto;
+}
+
+.choice {
+  color: #fb349c;
+  font-weight: 900;
+}
+
+.title {
+  color: #fb349c;
+  font-weight: 900;
+}
+
+.footer-bar {
+  background-color: #b8c0ff;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  bottom: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  height: 6vw;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-box {
+  display: flex;
+  height: 60px;
+  padding: 2rem;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+}
+
+.footer-icon {
+  width: 80%;
+  object-fit: cover;
+  height: 80%;
+  padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 18%;
+  }
+
+  .header-bar {
+    height: 6vh;
+    padding: 0.5rem;
+  }
+
+  .header-logo {
+    font-size: 16px;
+  }
+
+  .header-logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+
+  .header-name {
+    font-size: 20px;
+  }
+
+  .header-link-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .content-character {
+    width: 15%;
+    height: 10%;
+    top: 10%;
+  }
+
+  .content-table {
+    width: 60%;
+    height: 10%;
+  }
+
+  .content-table-pokeball {
+    margin: 1vh;
+    width: 50%;
+    height: 70%;
+  }
+
+  .content-bubble {
+    font-size: 8px;
+    width: 50%;
+    height: 5%;
+    left: 17%;
+    bottom: 13%;
+  }
+
+  .content-bubble:after {
+    border-width: 15px 10px 0;
+    bottom: -15px;
+  }
+
+  .content-screen {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .footer-bar {
+    height: 6vh;
+    padding: 0.5rem;
+  }
+
+  .footer-box {
+    height: 30px;
+    padding: 0.01rem;
+  }
+
+  .footer-text {
+    font-size: 10px;
+  }
+
+  .footer-icon {
+    width: 60%;
+    height: 60%;
+  }
+}
