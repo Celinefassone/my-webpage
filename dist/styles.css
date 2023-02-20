@@ -82,6 +82,70 @@ body {
   ********* CONTENT STYLES *********
 */
 
+.console-circle-left {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 34%;
+  left: 16%;
+  width: 5%;
+}
+
+.console-circle-left-img {
+  width: 100%;
+  object-fit: scale-down;
+  height: 100%;
+}
+
+.console-arrow {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  width: 7%;
+}
+
+.console-arrow-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.console-button {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 33%;
+  left: 78%;
+  width: 7%;
+}
+
+.console-button-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.console-circle-right {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 56%;
+  left: 79%;
+  width: 5%;
+}
+
+.console-circle-right-img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
 .main-content {
   height: 100vh;
   /* padding-top: 10vh;
@@ -342,5 +406,21 @@ body {
   .footer-icon {
     width: 60%;
     height: 60%;
+  }
+
+  .console-button {
+    display: none;
+  }
+
+  .console-arrow {
+    display: none;
+  }
+
+  .console-circle-left {
+    display: none;
+  }
+
+  .console-circle-right {
+    display: none;
   }
 }
