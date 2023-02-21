@@ -22,4 +22,28 @@ document.addEventListener("DOMContentLoaded", (e) => {
       this.classList.add("active");
     });
   });
+
+  {
+    const buttonx = document.getElementById("buttonx");
+    const buttony = document.getElementById("buttony");
+    const buttona = document.getElementById("buttona");
+    const buttonb = document.getElementById("buttonb");
+    const nintendo = document.querySelector("#nintendo");
+
+    buttonx.addEventListener("click", function changeColor() {
+      nintendo.style.backgroundColor = "#C6FFC7";
+    });
+
+    buttony.addEventListener("click", function changeColor() {
+      nintendo.style.backgroundColor = "#FFA695";
+    });
+
+    buttona.addEventListener("click", function changeColor() {
+      nintendo.style.backgroundColor = "#FD6DB7";
+    });
+
+    buttonb.addEventListener("click", function changeColor() {
+      nintendo.style.backgroundColor = "#50B6FF";
+    });
+  }
 });

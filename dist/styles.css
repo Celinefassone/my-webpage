@@ -122,12 +122,27 @@ body {
   top: 33%;
   left: 78%;
   width: 7%;
+  flex-direction: column;
+  align-items: center;
 }
 
-.console-button-img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
+.button-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  border-radius: 100px;
+  background-color: #bce3fb;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  font-weight: 900;
+  height: 40%;
+  margin: 0px 15px 0px 15px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .console-circle-right {
@@ -148,8 +163,6 @@ body {
 
 .main-content {
   height: 100vh;
-  /* padding-top: 10vh;
-  padding-bottom: 10vh; */
   align-items: center;
   justify-content: center;
   display: flex;
@@ -409,7 +422,23 @@ body {
   }
 
   .console-button {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    top: 78%;
+    left: 31%;
+  }
+
+  .button {
+    border-radius: 100px;
+    background-color: #bce3fb;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    font-weight: 900;
+    height: 10%;
+    margin: 0px 5px 0px 5px;
+    font-size: 12px;
+    cursor: pointer;
   }
 
   .console-arrow {
