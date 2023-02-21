@@ -140,7 +140,6 @@ body {
   border-color: black;
   border-width: 5px;
   font-weight: 900;
-  height: 40%;
   margin: 0px 15px 0px 15px;
   font-size: 20px;
   cursor: pointer;
@@ -425,9 +424,11 @@ body {
   .console-button {
     display: flex;
     flex-direction: row;
-    bottom: 132px;
+    bottom: 0px;
     width: 0%;
-    position: fixed;
+    position: absolute;
+    top: 390px;
+    left: 113px;
   }
 
   .button {
@@ -437,7 +438,6 @@ body {
     border-color: black;
     border-width: 3px;
     font-weight: 900;
-    height: 10%;
     margin: 0px 5px 0px 5px;
     font-size: 12px;
     cursor: pointer;
