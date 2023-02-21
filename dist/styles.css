@@ -4,6 +4,7 @@
 
   --font-size-xxs: calc(var(--body-font-size) * 0.4);
   --font-size-xs: calc(var(--body-font-size) * 0.55);
+  --font-size-s: calc(var(--body-font-size) * 0.75);
   --font-size-sm: calc(var(--body-font-size) * 0.95);
   --font-size-md: --body-font-size;
   --font-size-lg: calc(var(--body-font-size) * 1.1);
@@ -413,7 +414,7 @@ body {
   }
 
   .footer-text {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-s);
   }
 
   .footer-icon {
