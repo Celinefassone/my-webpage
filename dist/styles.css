@@ -427,6 +427,7 @@ body {
     flex-direction: row;
     bottom: 132px;
     width: 0%;
+    position: fixed;
   }
 
   .button {
