@@ -425,8 +425,8 @@ body {
   .console-button {
     display: flex;
     flex-direction: row;
-    top: 78%;
-    left: 31%;
+    bottom: 132px;
+    width: 0%;
   }
 
   .button {
